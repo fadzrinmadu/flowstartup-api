@@ -30,6 +30,7 @@ func main() {
 	// MARK: Services
 	userService := user.NewService(userRepository)
 	authService := auth.NewService()
+	// campaignService := campaign.NewService(campaignRepository)
 
 	// MARK: Handlers
 	userHandler := handler.NewUserHandler(userService, authService)
